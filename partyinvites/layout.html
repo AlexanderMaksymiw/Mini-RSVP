@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Let's Party!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body class="p-2" style="font-family: 'Open Sans', sans-serif">
+    {{ block "body" . }}Content Goes Here{{ end }}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{{ define "body"}}
+
+<div class="text-center">
+  <h1>Thank you, {{ . }}!</h1>
+  <div>
+    It's great that you're coming. The drinks are already in the fridge!
+  </div>
+  <div>Click <a href="/list">here</a> to see who else is coming.</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
+</script>
+
+{{ end }}
